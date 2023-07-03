@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>arithmetic functions</h1>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <p id="para3"></p>
+    <script>
+        
+        function fun(a,b)
+        {
+          document.getElementById("para1").innerHTML=`sum is ${a+b}`;
+          document.getElementById("para2").innerHTML=`multiplication  is ${a*b}`;
+          document.getElementById("para3").innerHTML=`dividend is is ${a/b}`;
+        }
+        let a=10;
+        let b=5;
+        fun(10,5);
+    </script>
+</body>
+</html>

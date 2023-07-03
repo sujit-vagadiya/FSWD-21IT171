@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para"></p>
+    <script>
+        function fun(arr)
+        {
+            let maxi=0,mini=999999;
+          for(let i=0;i<arr.length;i++)
+          {
+            if(maxi<arr[i])
+            {
+                maxi=arr[i];
+            }
+            if(mini>arr[i])
+            {
+                mini=arr[i];
+            }
+          }
+          document.getElementById("para").innerHTML=`max value is ${maxi} and min value is ${mini}`;
+        }
+        let arr=[45,56,7,823];
+        fun(arr);
+        
+    </script>
+</body>
+</html>

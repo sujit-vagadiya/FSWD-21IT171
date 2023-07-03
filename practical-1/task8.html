@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>try catch</h2>
+    <h3>try to put positive number</h3>
+    <form action="task8.html">
+        <input type="text" id="ip">
+        <button type="button" onclick="fun()">try</button>
+    </form>
+    <p id="suj"></p>
+    <script>
+     function fun(){
+      let l=document.getElementById("suj");
+      l.innerHTML="";
+      let q=document.getElementById("ip").value;
+      try{
+        if(q<0)
+        {
+            throw "please enter positive number";
+        }
+      }
+      catch(ex)
+      {
+        l.innerHTML="Error Ocurrede : "+ ex;
+      }
+    }
+      
+    </script>
+</body>
+</html>
