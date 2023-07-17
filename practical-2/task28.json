@@ -1,0 +1,24 @@
+[ 
+ { 
+ "name": "folder1", 
+ "type": "folder", 
+ "children": [ 
+ { 
+ "name": "file1.txt", 
+ "type": "file", 
+ "content": "Content of file 1"
+ }, 
+ { 
+ "name": "folder2", 
+ "type": "folder", 
+ "children": [ 
+ { 
+ "name": "file2.txt", 
+ "type": "file", 
+ "content": "Content of file 2"
+ } 
+ ] 
+ } 
+ ] 
+ } 
+ ] 
